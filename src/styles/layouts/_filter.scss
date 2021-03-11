@@ -1,0 +1,54 @@
+.filter{
+    height: 100vh;
+    width: 23%;
+    padding: 1.5em;
+    background-color: white;
+
+    h3{
+        padding: .5em;
+        margin-bottom: 2em;
+        color: rgb(29, 67, 173);
+
+        i{
+            margin-right: .5em;
+        }
+    }
+
+    label{
+        font-size: .9rem;
+        color: grey;
+    }
+
+    input, select{
+        @extend %form-fields;
+        color: grey;
+    }
+
+    button{
+        @extend %blue_button;
+        display: inline-block;
+    }
+
+    .btns{
+        margin-top: 1.3em;
+        width: 100%;
+        display: inline-flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        .btn_filter{
+            padding: .8em;
+            margin-right: 5px;
+            background-image: linear-gradient( to right, rgb(139, 174, 41), rgb(113, 148, 73)) ;
+        }
+    
+        .btn_reset{
+            padding: .8em;
+            background-color: white;
+            border: 1px solid rgb(113, 148, 73);
+            color: rgb(113, 148, 73);
+        }
+    }
+
+    
+}

@@ -1,0 +1,112 @@
+.users_content{
+    width: 75%;
+    background-color: rgb(245, 245, 245);
+
+    header{
+        display: inline-flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        height: 5em;
+        width: 100%;
+        background-color: white;
+        color: rgb(29, 67, 173);
+        
+        div{
+            display: inline-flex;
+            width: 50%;
+            font-weight: 700;
+            align-items: center;
+            font-size: 1.5rem;
+            text-align: right;
+
+            p{
+                margin-left: 1em;
+                margin-right: 2em;
+            }
+        }
+
+        .user_logged{
+            justify-content: flex-end;
+            font-size: 1rem;
+            color: black;
+            
+            i{
+                font-size: 1.5rem;
+            }
+
+            .fa-sign-out-alt{
+                color: rgb(29, 67, 173);
+                cursor: pointer;
+            }
+        }
+
+        
+    }
+
+    .users_filter{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        padding: 1em;
+
+        .all_users{
+            width: 75%;
+            height: 100vh;
+            background-color: white;
+
+            .users_head{
+                padding: .8em;
+                width: 100%;
+                display: inline-flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+
+                h2{
+                    font-size: 1.2rem;
+                    padding: .6em;
+                    color: rgb(29, 67, 173);
+    
+                    i{
+                        margin-right: 1em;
+                    }
+                }
+    
+                button{
+                    @extend %blue_button;
+                    padding: .7em 2em;
+                    cursor: pointer;
+                }
+            }
+
+            .users_list{
+                overflow-x: scroll;
+                
+                table{
+                    width: 80%;
+                    margin-top: 2em;
+                    font-size: .8em;
+                    font-weight: 300;
+
+                    border-collapse: collapse;
+                    border-spacing: 0;
+
+                    th{
+                        border-bottom: 1px solid grey;
+                    }
+
+                    th, td{
+                        padding: 10px;
+                    }
+                }
+
+                .fa-pen{
+                    margin-right: 5px;
+                }
+            }
+            
+
+        }
+    }
+}

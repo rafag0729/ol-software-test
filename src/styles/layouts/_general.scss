@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $font-stack;
+    font-weight: 300;
+}
+
+.users_page{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}

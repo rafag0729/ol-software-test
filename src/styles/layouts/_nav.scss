@@ -1,0 +1,36 @@
+nav{
+    background-color: rgb(45, 114, 202);
+    height: 100vh;
+    width: 25%;
+    padding: 0 2em 0 2em;
+    color: white;
+
+    h2{
+        font-weight: 300;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        border-bottom: 1px solid white;
+
+        i{
+            margin-right: 1em;
+        }
+    }
+    
+
+    p{
+        padding-top: .5em;
+        padding-bottom: .5em;
+
+        :first-child{
+            margin-top: 1em;
+        }
+        
+        i{
+            margin-right: 2em;
+            font-weight: 300;
+        }
+    }
+
+    
+
+}

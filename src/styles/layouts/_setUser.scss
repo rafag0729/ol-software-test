@@ -1,0 +1,103 @@
+.newUser_bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0 , .7);
+    z-index: 0;
+}
+
+.setUser_form{
+    position: fixed;
+    top: 6em;
+    left: 20em;
+    width: 700px;
+    padding: 2em;
+    background-color: white;
+    z-index: 100;
+    border-radius: 15px;
+
+    .header_close{
+        position: relative;
+
+        .fa-times-circle{
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+    }
+
+    h2{
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 2em;
+        margin-top: 0.5em;
+    }
+
+
+    .newUser_inputs{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin-bottom: 2em;
+        outline: none;
+
+        div{
+            width: 35%;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: flex-end;
+        }
+
+        div:first-child{
+            margin-left: 7em;
+        }
+
+        input, select{
+            padding-top: .5em;
+            padding-bottom: .5em;
+            margin-top: .3em;
+            margin-bottom: 1em;
+            width: 170px;
+            border: 1px solid rgba(0, 0, 0, .3);
+            border-radius: 2px;
+            color: grey;
+        }
+    }
+
+    
+    .btns_setUser{
+
+        display: flex;
+        flex-flow: row wrap;    
+        justify-content: center;
+
+        button{
+            padding: 1.4em 2em;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        
+
+        button:first-child{
+            margin-right: 2em;
+            background-image: linear-gradient(to right, #8bae29, #719449);
+            color: white;
+        }    
+
+        button:last-child{
+            background-color: white;
+            border: 1px solid  #719449;
+            color:  #719449;
+        }
+    }
+
+}
+
+.hidden{
+    display: none;
+}
